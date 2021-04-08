@@ -57,37 +57,18 @@ function doSomething() {
 
     console.log(numeriUtente);
 
-}
+    var indovinati = [];
 
-var numeriUtente = numeriUtente;
+    for (var i = 0; i < numeriUtente.length; i++ ) {
+        var thisNumeriUtente = numeriUtente[i];
 
-// controllo numeri inseriti con quelli generati
-
-// var numeroTrovato = false;
-
-// while (numeriUtente.length < 5) {
-
-//     var numero = parseInt(prompt('inserisci un numero'));
-
-//     var isNumeroBomba = isBombaTrovata(numero, bombe);
-
-//     console.log('numeri Inseriti', numeriInseriti);
-// }
-
-
-isNumeroTrovato();
-
-function isNumeroTrovato(numeriUtente, numeri) {
-
-    var i = 0;
-
-    if ( i < numeri.length, i++) {
-
-        var numeroArray = numeri[i];
-
-        if (numeriInserito == numeroArray) {
-
-            found = true;
+        if (numeri.includes(thisNumeriUtente) == true ) {
+            indovinati.push(thisNumeriUtente);
         }
     }
+    console.log(indovinati);
+
+    alert("hai indovinato " + indovinati.length + "numeri. i numeri sono: ")
+    alert(indovinati);
+
 }
